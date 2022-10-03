@@ -11,10 +11,10 @@ const getDetailShoes=() => {
         .then(function (res) {
             // getEle("name").innerHTML=res.data.name
             getEle("imgs").setAttribute("src",res.data.hinhAnh[0])
-            getEle("product-name").innerHTML = res.data.name
+            getEle("product-name").innerHTML ="Tên:" + res.data.name
             // getEle("TenSP").innerHTML=res.data.name
-            getEle("product-price").innerHTML=res.data.price
-            getEle("product-description").innerHTML=res.data.description
+            getEle("product-price").innerHTML="Giá:" + res.data.price
+            getEle("product-description").innerHTML= "Mô Tả :" + res.data.moTa
             renderImg(res.data.hinhAnh)
             // getEle("size").innerHTML = res.data.content.size
         })

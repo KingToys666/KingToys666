@@ -58,9 +58,9 @@ function addProduct(){
     var HinhSP1 = getEle("HinhSP1").value
     var HinhSP2 = getEle("HinhSP2").value
     arrImg.push(HinhSP,HinhSP1,HinhSP2)
-    var motaSP = getEle("moTaSP").value
+    var moTa = getEle("moTaSP").value
     var status = getEle("status").value
-    var sanPham = new SanPham("",tenSP,giaSP,arrImg,motaSP,status)
+    var sanPham = new SanPham("",tenSP,giaSP,arrImg,moTa,status)
 
     service.addProductAPI(sanPham)
 
