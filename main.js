@@ -308,7 +308,7 @@ function renderProduct(product) {
                     <h3>${item.name}</h3>
                     
                     <p>Giá :${item.price.toLocaleString()}VNĐ</p>
-                    <a href="/detail.html?id=${item.id}" class="btn">Chi tiết </a>
+                    <a href="./detail/detail.html?id=${item.id}" class="btn">Chi tiết </a>
                
                 </div>
             </div>

@@ -51,12 +51,16 @@ getEle("btnThemSP").addEventListener("click",function () {
 })
 // thêm sản phẩm 
 function addProduct(){
+    var arrImg = []
     var tenSP = getEle("TenSP").value
     var giaSP = getEle("GiaSP").value
     var HinhSP = getEle("HinhSP").value
+    var HinhSP1 = getEle("HinhSP1").value
+    var HinhSP2 = getEle("HinhSP2").value
+    arrImg.push(HinhSP,HinhSP1,HinhSP2)
     var motaSP = getEle("moTaSP").value
     var status = getEle("status").value
-    var sanPham = new SanPham("",tenSP,giaSP,HinhSP,motaSP,status)
+    var sanPham = new SanPham("",tenSP,giaSP,arrImg,motaSP,status)
 
     service.addProductAPI(sanPham)
 
